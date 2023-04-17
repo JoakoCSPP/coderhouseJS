@@ -269,6 +269,9 @@ i{
         flex-direction: column;
         height: 300px;
     }
+    button{
+        margin-bottom: 50px;
+    }
     .topnav input[type=text]{
         display: block;
     }
