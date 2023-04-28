@@ -22,17 +22,19 @@ body{
     height: 30px;
     background-color: $color-header-chiquito;   
     justify-content: right;
-    transition: 0.5;
+    transition: 1s;
+    
+    a{
+        font-size: 20px;
+        color: #000000;
+        padding-left: 15px;
+        
+    }
 }
 
-.header-chiquito a{
-    font-size: 20px;
-    color: #000000;
-    padding-left: 15px;
-    transition: 0.5;
-}
+
 .header-chiquito a:hover{
-    transform: scale(1.1);
+    transform:rotate(5deg);
 
 }
 header{
@@ -69,14 +71,16 @@ header{
     display: flex;
     align-items: center;
     padding-top: 15px;
+
+    img{
+        height: 60px;
+        padding-bottom: 10px;
+        
+        
+    }
 }
 
-.logo img{
-    height: 60px;
-    padding-bottom: 10px;
-    
-    
-}
+
 .topnav input[type=text] {
     
     display: flex;
@@ -169,6 +173,10 @@ button span{
     font-family: 'Bodoni Moda', serif;
     font-weight: bold;
     
+    
+}
+.favoritos:hover{
+    transform: scale(1.2);
 }
 .productos{
     display: flex;
@@ -176,7 +184,16 @@ button span{
     justify-content: center;
     margin: 0 auto;
     padding-left: 200px;
-    
+    img{
+        display: flex;
+        height: 500px;
+        width: 400px; 
+        
+    }
+    a{
+        height: 500px;
+        width: 400px; 
+    }
 }
 .contenido-productos{
     display:flex;
@@ -197,16 +214,7 @@ button span{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
 }
-.productos img{
-    display: flex;
-    height: 500px;
-    width: 400px; 
-    
-}
-.productos a{
-    height: 500px;
-    width: 400px; 
-}
+
 .titulo-nosotros{
     width: 500px;
     margin: 0 auto;
