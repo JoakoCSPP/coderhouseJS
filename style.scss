@@ -191,6 +191,7 @@ button span{
 }
 .favoritos:hover{
     transform: scale(1.1);
+    
 }
 @mixin sizes ($width, $height,){
     width: $width;
