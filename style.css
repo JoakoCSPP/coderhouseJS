@@ -488,6 +488,9 @@ i {
   }
 }
 @media (max-width: 438px) {
+  .sobre-nosotros p {
+    width: 500px;
+  }
   iframe {
     width: 300px;
   }
@@ -525,6 +528,10 @@ i {
   footer {
     flex-direction: column;
   }
+  .sobre-nosotros p {
+    width: 700px;
+    padding-left: 80px;
+  }
   .copyright {
     flex-direction: column;
     align-items: center;
@@ -545,6 +552,9 @@ i {
   }
 }
 @media (max-width: 436px) {
+  .sobre-nosotros p {
+    width: 500px;
+  }
   footer {
     margin-top: 20%;
     height: -moz-max-content;
@@ -572,6 +582,10 @@ i {
   }
 }
 @media (max-width: 375px) {
+  .sobre-nosotros p {
+    width: 400px;
+    margin-right: 70px;
+  }
   footer {
     margin-top: 50%;
     height: -moz-max-content;
