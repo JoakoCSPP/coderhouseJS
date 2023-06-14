@@ -43,9 +43,6 @@ break
 }
 
 
-
-
-
 edad = Number(prompt("Confirme su edad: "))
 
 if (edad < 18){
