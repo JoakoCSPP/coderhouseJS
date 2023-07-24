@@ -13,10 +13,13 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../cart.css">
     <link href="https://fonts.cdnfonts.com/css/frutiger" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <script src="https://kit.fontawesome.com/6d580bd4a7.js" crossorigin="anonymous"></script>
-    <script src="../index.js"></script>
+    <script src="../js/productos.js"></script>
+    <script src="../js/cartService.js" defer></script>
+    <script src="../js/cart.js" defer></script>
     <title>Indumentaria Nufers</title>
 </head>
 <!--ESTA SECCION ES PARA EL METODO DE PAGO, TODAVIA NO AGREGUE NADA-->
@@ -44,8 +47,11 @@
                 <a href="./nosotros.html">Sobre Nosotros</a>
 
             </div>
+            <a href="../html/pago.html"><img src="../images/shoppingcart.png" alt="carrito" id="cart"><span id="cuenta-carrito">0</span></a>
         </header>
     </nav>
+
+
     <main>
         <section class="background-image"><!--Titulo con imagen de fondo-->
             <div class="contenido-image">
@@ -53,122 +59,19 @@
             </div>
         </section>
         <br>
-        <div class="dropdown">
-            <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">
-                <span>Filtrar</span> <svg xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                    <path
-                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-                </svg>
-            </button>
-            <ul class="btn btn-light dropdown-menu"> <!--Boton de filtrar-->
-                <li><a class="dropdown-item" href="./hombre.html">Hombre</a></li>
-                <li><a class="dropdown-item" href="./mujer.html">Mujer</a></li>
-                <li><a class="dropdown-item" href="./accesorios.html">Accesorios</a></li>
-                <li><a class="dropdown-item" href="./calzado.html">Calzado</a></li>
-                <li><a class="dropdown-item" href="./mochilas.html">Mochilas</a></li>
-
-            </ul>
-        </div>
-        <br>
-        <div class="pago-titulo">
-            <h2>MUCHISIMAS GRACIAS POR TU COMPRA!
-                <br>
-                AGRADECEMOS QUE CONFIES EN NOSOTROS <br>
-
-            </h2>
-
-        </div>
-        <div class="contenido-pago">
-            <p class="contenido-pago">
-                No olvides contactarnos si tienes algun inconveniente
-            </p>
-        </div>
-
-        <div class="container">
-
-            <form action="">
-
-                <div class="row">
-
-                    <div class="col">
-
-                        <h3 class="title">Informacion</h3>
-
-                        <div class="inputBox">
-                            <span>Nombre Completo</span>
-                            <input type="text" placeholder="tu nombre completo">
-                        </div>
-                        <div class="inputBox">
-                            <span>Email</span>
-                            <input type="email" placeholder="ejemplo@ejemplo.com">
-                        </div>
-                        <div class="inputBox">
-                            <span>Dirección</span>
-                            <input type="text">
-                        </div>
-                        <div class="inputBox">
-                            <span>País</span>
-                            <input type="text" placeholder="Argentina">
-                        </div>
-
-                        <div class="flex">
-                            <div class="inputBox">
-                                <span>Estado</span>
-                                <input type="text" placeholder="Argentina">
-                            </div>
-                            <div class="inputBox">
-                                <span>Código Postal</span>
-                                <input type="text">
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col">
-
-                        <h3 class="title">Métodos de pago</h3>
-
-                        <div class="inputBox">
-                            <span>Tarjetas aceptadas</span>
-                            <img src="../images/card_img.png" alt="">
-                        </div>
-                        <div class="inputBox">
-                            <span>Nombre</span>
-                            <input type="text">
-                        </div>
-                        <div class="inputBox">
-                            <span>Número de tarjeta</span>
-                            <input type="number">
-                        </div>
-                        <div class="inputBox">
-                            <span>Mes de expiración</span>
-                            <input type="text">
-                        </div>
-
-                        <div class="flex">
-                            <div class="inputBox">
-                                <span>Año de expiración</span>
-                                <input type="number">
-                            </div>
-                            <div class="inputBox">
-                                <span>CVV</span>
-                                <input type="text" placeholder="1234">
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <input type="submit" value="Enviar" class="submit-btn">
-
-            </form>
-
-        </div>
 
 
-
+        <p id="texto-centro"><a href="../index.html">Agregar productos</a></p>
+		<section id="cart-container">
+		</section>
+        <section id="totales">
+            <p>Total unidades: <span id="cantidad">0</span></p>
+            <p>Total precio: $<span id="precio">0</span></p>
+            <a id= "comprarBoton"href="contacto.html">Comprar</a>
+            <button id="reiniciar">Reiniciar carrito</button>
+        </section>
+    
+    
 
 
     </main>

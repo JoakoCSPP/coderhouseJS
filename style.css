@@ -73,6 +73,7 @@ header {
   font-size: 30px;
   height: 50px;
   width: 500px;
+  
 }
 
 .fa-solid {
@@ -85,6 +86,8 @@ header {
   display: flex;
   padding-bottom: 7px;
   justify-content: center;
+  margin-left: 200px;
+  
 }
 
 .box1 .topnav input[type=text] {
@@ -98,7 +101,28 @@ header {
   height: 50px;
   width: 500px;
 }
+.centrar{
+  justify-content: center;
+  margin-left: 1000px;
+}
 
+header a img{
+  height: 40px;
+}
+header a:hover{
+  color: pink;
+}
+#cuenta-carrito{
+  background-color: rgb(191, 120, 120);
+  font-size: 25px;
+  border-radius: 100%;
+  display: inline-block;
+  width: 25px;
+  line-height: 20px;
+  aspect-ratio: 1;
+  text-align: center;
+  padding-top: 1px;
+}
 nav {
   justify-content: right;
   text-decoration: none;
@@ -136,22 +160,6 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-button svg {
-  padding-bottom: 10px;
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-}
-
-button {
-  display: flex;
-  justify-content: space-between;
-  font-size: 50px;
-}
-
-button span {
-  font-size: 40px;
-}
 
 .favoritos, .titulo-nosotros {
   margin-top: 100px;
@@ -162,41 +170,16 @@ button span {
   transition: 0.5s;
 }
 
-.productos {
-  display: flex;
-  flex-wrap: wrap;
+
+.tarjeta-producto button{
+  background-color: rgb(35, 8, 13);
+  color: white;
+  padding: 5px 5px;
+  border: unset;
+  border-radius: 5px;
+  cursor: pointer;
   justify-content: center;
   margin: 0 auto;
-  padding-left: 200px;
-}
-.productos img {
-  display: flex;
-  width: 400px;
-  height: 500px;
-}
-
-.contenido-productos {
-  display: flex;
-  width: 400px;
-  height: 540px;
-  justify-content: center;
-  margin-right: 150px;
-  margin-left: 150px;
-  margin-top: 150px;
-  text-align: center;
-  transition: 0.5s;
-}
-
-.contenido-productos-index {
-  display: flex;
-  width: 400px;
-  height: 500px;
-  justify-content: center;
-  margin-right: 150px;
-  margin-left: 150px;
-  margin-top: 150px;
-  text-align: center;
-  transition: 0.5s;
 }
 
 .contenido-productos-index img {
@@ -204,34 +187,6 @@ button span {
   height: 500px;
 }
 
-.precio-comprar {
-  background: bisque;
-}
-
-.precios {
-  padding-right: 30px;
-}
-
-.contenido-productos:hover {
-  transform: scale(1.1);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.contenido-productos-index:hover {
-  transform: scale(1.1);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.pago-titulo {
-  display: flex;
-  font-size: 100px;
-  justify-content: center;
-}
-
-.contenido-pago {
-  display: flex;
-  justify-content: center;
-}
 
 .container {
   display: flex;
@@ -411,6 +366,14 @@ i {
   margin-right: 10px;
 }
 
+#comprarBoton{
+  background-color: rgb(246, 240, 240);
+  font-size: 30px;
+  border: #000 1px outset;
+}
+#comprarBoton:hover{
+  color: #000;
+}
 @media (max-width: 1300px) {
   .productos {
     padding-left: 0px;
@@ -657,4 +620,4 @@ i {
   .contenido-pago {
     padding-left: 10px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
