@@ -102,8 +102,9 @@ header {
   width: 500px;
 }
 .centrar{
+  display: flex;
   justify-content: center;
-  margin-left: 1000px;
+  
 }
 
 header a img{
@@ -112,6 +113,7 @@ header a img{
 header a:hover{
   color: pink;
 }
+
 #cuenta-carrito{
   background-color: rgb(191, 120, 120);
   font-size: 25px;
@@ -133,6 +135,7 @@ a {
   text-decoration: none;
   color: black;
   padding-right: 10px;
+  
 }
 
 .background-image {

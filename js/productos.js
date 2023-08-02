@@ -26,7 +26,7 @@ const productos = [
     },
     {
         id: 6,
-        nombre: 'camisa fachera',
+        nombre: 'camisa',
         img: "https://i.pinimg.com/550x/9e/f1/d8/9ef1d83080f0fc5691a44e11a333c000.jpg",
         precio: 4500,
     },
@@ -56,7 +56,7 @@ const productos = [
     },
     {
         id: 11,
-        nombre: 'campera inflable',
+        nombre: 'campera',
         img: "https://www.clicksport.com.ar/2249-thickbox_default/columbia-campera-hombre-pluma-lake-22-down-jacket-bordo.jpg",
         precio: 4500,
     },

@@ -30,7 +30,12 @@
 .tarjeta-producto button{
   margin-top: 40px;
 }
+#cart-container{
+  max-height: max-content;
+  margin-bottom: 1%
+}
 #totales{
+  
   margin-top: 10%;
   text-align: center;
 }
